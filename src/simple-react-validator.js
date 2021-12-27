@@ -246,7 +246,7 @@ class SimpleReactValidator {
 
     humanizeFieldName(field) {
       // supports snake_case or camelCase
-      return field.replace( /([A-Z])/g, ' $1' ).replace(/_/g, ' ');
+      return field.replace(/_/g, ' ');
     },
 
     element(message, options) {
