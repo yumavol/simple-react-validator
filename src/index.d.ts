@@ -43,7 +43,7 @@ interface IHelpers {
 
 declare class SimpleReactValidator {
   constructor(options?: IOptions);
-  addLocale : any;
+  addLocale() : void;
   fields: IObject;
   visibleFields: any[];
   errorMessages: IObject;
