@@ -22,7 +22,6 @@ interface IRules {
 
 interface IHelpers {
   parent: any;
-  addLocale : any;
   passes(rule: any, value: any, params: any, rules: any): boolean;
   isRequired(rule: any, rules: any): boolean;
   isBlank(value: any): boolean;
@@ -44,6 +43,7 @@ interface IHelpers {
 
 declare class SimpleReactValidator {
   constructor(options?: IOptions);
+  addLocale : any;
   fields: IObject;
   visibleFields: any[];
   errorMessages: IObject;
